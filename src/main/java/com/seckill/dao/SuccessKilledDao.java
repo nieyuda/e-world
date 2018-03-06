@@ -26,5 +26,5 @@ public interface SuccessKilledDao {
     * @Date: 2018/3/6 
     */ 
     SuccessKilled queryByIdWithSeckill(long seckillId);
-    
+
 }
