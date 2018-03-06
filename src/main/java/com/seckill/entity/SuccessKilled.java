@@ -19,6 +19,8 @@ public class SuccessKilled {
 
     private Date createTime;
 
+    private Seckill seckill;//这是一个多对一的复合属性，
+
     public long getSeckillId() {
         return seckillId;
     }
@@ -49,6 +51,14 @@ public class SuccessKilled {
 
     public void setCreateTime(Date createTime) {
         this.createTime = createTime;
+    }
+
+    public Seckill getSeckill() {
+        return seckill;
+    }
+
+    public void setSeckill(Seckill seckill) {
+        this.seckill = seckill;
     }
 
     @Override
