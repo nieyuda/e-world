@@ -13,3 +13,6 @@ Mybatis是做什么的？
 
 SQL写在哪里？   1.写在一个XML文件中 （主流）   2.写在注解里
 如何实现Dao接口？  1.Mapper自动实现Dao接口(主流)    2.API编程（connection,statement,....）
+
+Spring和dao层的整合就结束了，接下来开始第二章，Spring和Service的设计
+
