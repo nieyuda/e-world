@@ -35,6 +35,9 @@ public class Exposer {
         this.seckillId = seckillId;
     }
 
+    public Exposer(boolean b, long seckillId, long time, long time1, long time2) {
+    }
+
     public boolean isExposed() {
         return exposed;
     }

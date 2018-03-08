@@ -27,4 +27,5 @@ public interface SuccessKilledDao {
     */ 
     SuccessKilled queryByIdWithSeckill(long seckillId);
 
+    SuccessKilled queryByIdWithSeckill(long seckillId, long userPhone);
 }
