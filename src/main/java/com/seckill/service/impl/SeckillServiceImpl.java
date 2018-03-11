@@ -11,6 +11,8 @@ import com.seckill.exception.SeckillCloseException;
 import com.seckill.exception.SeckillException;
 import com.seckill.service.SeckillService;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.springframework.util.DigestUtils;
 
 import java.util.Date;
@@ -23,11 +25,14 @@ import java.util.logging.Logger;
  * @author: Mr.Yooda
  * @create: 2018-03-08 19:02
  **/
-
+@Service
 public class SeckillServiceImpl implements SeckillService {
 
     private Logger logger = (Logger) LoggerFactory.getLogger(this.getClass());
+    //注入service依赖
+    @Autowired
     private SeckillDao seckillDao;
+    @Autowired
     private SuccessKilledDao successKilledDao;
     //md5混淆
     private final String slat = "ysdfsadfdsdfasfd";
